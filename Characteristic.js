@@ -138,6 +138,8 @@ Characteristic.prototype = {
 				console.log("Characteristics.js:valueForUpdate(): called, Siri has asked for the accessory's status: returning " + this.value);
 				callback(this.value);
 			});
+		}else{
+			callback(this.value);
 		}
 		//
 
